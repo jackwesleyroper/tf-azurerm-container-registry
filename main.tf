@@ -69,7 +69,7 @@ resource "azurerm_container_registry" "acr" {
   }
 
   dynamic "trust_policy" {
-    for_each = (var.trust_policy_enabled != null && (var.sku == "Premium")) ? [{}]: []
+    for_each = (var.trust_policy_enabled != null && (var.sku == "Premium")) ? [{}] : []
     content {
       enabled = var.trust_policy_enabled
     }
