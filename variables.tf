@@ -80,10 +80,6 @@ variable "retention_policy" {
   default = null
 }
 
-variable "trust_policy_enabled" {
-  default = null
-}
-
 variable "identity" {
   default = null
 }
