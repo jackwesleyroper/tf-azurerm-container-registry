@@ -38,6 +38,16 @@ variable "quarantine_policy_enabled" {
   default = null
 }
 
+variable "retention_policy_in_days" {
+  description = "(Optional) The number of days to retain and untagged manifest after which it gets purged. Defaults to 7."
+  default = 7
+}
+
+variable "trust_policy_enabled" {
+  description = "(Optional) Boolean value that indicated whether trust policy is enabled. Defaults to false."
+  default = false
+}
+
 variable "zone_redundancy_enabled" {
   default = false
 }
